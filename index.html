@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="all.min.css">
+  <title>Share Calculator</title>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+     <div class="container justify-content-center">
+          <a href="#" class="navbar-brand"><h2>Share  Calculator<h2> 
+            </a>
+      </div>     
+      <button class="clear-btn btn btn-danger mr-5">Clear Records</button>
+  </nav>
+  <!--Purchase form-->
+  <div class="container mx-auto mt-2">
+      <form id="purchase-form">
+           <h3 class="text-center mt-3">Purchase Form</h3> 
+          <div class="row mt-3 justify-content-center">
+              <div class="col-md-3"> 
+                <div class="form-group">
+                  <label for="date">Date:</label>
+                  <input type="date" class="form-control" id="pdate" placeholder="Date...">
+              </div>
+            </div> 
+              <div class="col-md-3"> 
+                <div class="form-group">
+                <label for="company-name">Company Name:</label>
+                <input type="text" class="form-control" id="pcompany-name" placeholder="Company Name">
+                </div>
+            </div> 
+          <div class="col-md-3"> 
+            <div class="form-group">
+            <label for="number-share">Numbers of Shares:</label>
+            <input type="number" class="form-control" id="pnumber-share" placeholder="Number of share">
+          </div>  
+          </div>
+          <div class="col-md-3"> 
+            <div class="form-group">
+              <label for="per-share">Price Per Share:</label>
+              <input type="number" class="form-control" id="pper-share" placeholder="Price per share">
+            </div>
+          </div>   
+         <div class="form-group">
+          <button class="btn btn-primary purchase-btn"><i class="fa fa-plus"></i>Add Purchase</button>
+          <!--buttons-->
+       
+          <button class="btn btn-warning pupdate-btn"><i class="far fa-edit"></i>Update Purchase</button>
+          <button class="btn btn-danger pdelete-btn"><i class="fas fa-times"></i>Delete Purchase</button>
+          <button class="btn btn-dark pback-btn"><i class="fas fa-chevron-circle-left"></i>Back</button> 
+       
+        </div>          
+      </form>  
+  </div>
+  <!--Total Purchase-->
+  <div class="container mx-auto">
+    <div class="row">
+      <div class="col-md-6">
+        <h4 class="text-center">Total Purchase:<span class="total-purchase">0</span></h4>
+      </div>
+      <div class="col-md-6">
+        <h4 class="text-center">Total Amount:<span class="total-pamount">0</span></h4>
+      </div>
+    </div>
+  </div>
+
+  <!--Purchase list-->
+  <div class="container mx-auto mt-2">
+    <ul class="list-group" id="purchase-list">
+      <!-- <li class="list-group-item" id="item-0">
+        <strong class="pr-2">6/12/2020:</strong><b>Nabil</b> <em>500</em> @ <em>100</em> : <em>50000</em>
+        <a href="#" class="pl-5 "><i class="edit-item fas fa-pencil-alt"></i></a>
+      </li>
+      <li class="list-group-item" id="item-0">
+        <strong class="pr-2">6/12/2020:</strong><b>Nabil</b> <em>500</em> @ <em>100</em> : <em>50000</em>
+        <a href="#" class="pl-5 "><i class="edit-item fas fa-pencil-alt"></i></a>
+      </li>
+      <li class="list-group-item" id="item-0">
+        <strong class="pr-2">6/12/2020:</strong><b>Nabil</b> <em>500</em> @ <em>100</em> : <em>50000</em>
+        <a href="#" class="pl-5 "><i class="edit-item fas fa-pencil-alt"></i></a>
+      </li> -->
+    </ul>
+  </div>
+ 
+  <hr>
+  <!--Sales Form-->
+    <div class="container mx-auto mt-2">
+      <form id="sales-form">
+         <h3 class="text-center mt-3">Sales Form</h3> 
+          <div class="row mt-3 justify-content-center">
+            <div class="col-md-3"> 
+              <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="date" class="form-control" id="sdate" placeholder="Date...">
+            </div>
+          </div> 
+            <div class="col-md-3"> 
+              <div class="form-group">
+              <label for="company-name">Company Name:</label>
+              <input type="text" class="form-control" id="scompany-name" placeholder="Company Name">
+            </div>
+          </div> 
+        <div class="col-md-3"> 
+          <div class="form-group">
+          <label for="number-share">Numbers of Shares:</label>
+          <input type="number" class="form-control" id="snumber-share" placeholder="Number of share">
+        </div>  
+        </div>
+        <div class="col-md-3"> 
+          <div class="form-group">
+            <label for="per-share">Price Per Share:</label>
+            <input type="number" class="form-control" id="sper-share" placeholder="Price per share">
+           </div>
+          </div>   
+       <div class="form-group">
+          <button class="btn btn-primary sales-btn">
+          <i class ="fa fa-plus"></i>Add Sales</button> 
+          <button class="btn btn-warning supdate-btn"><i class="far fa-edit"></i>Update Sales</button>
+          <button class="btn btn-danger sdelete-btn"><i class="fas fa-times"></i>Delete Sales</button>
+          <button class="btn btn-dark sback-btn"><i class="fas fa-chevron-circle-left"></i>Back</button>
+        </div>          
+     </form>  
+ </div>
+  <!--Total Sales-->
+<div class="container mx-auto">
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="text-center">Total Sales:<span class="total-sales">0</span></h4>
+    </div>
+    <div class="col-md-6">
+      <h4 class="text-center">Total Amount:<span class="total-samount">0</span></h4>
+    </div>
+  </div>
+</div>
+
+
+  <!--Sales list-->
+  <div class="container mx-auto mt-2">
+    <ul class="list-group" id="sales-list">
+      <!-- <li class="list-group-item" id="item-0">
+        <strong class="pr-2">6/12/2020:</strong><b>Nabil</b> <em>500</em> @ <em>100</em> : <em>50000</em>
+        <a href="#" class="pl-5 "><i class="edit-item fas fa-pencil-alt"></i></a>
+      </li>
+      <li class="list-group-item" id="item-0">
+        <strong class="pr-2">6/12/2020:</strong><b>Nabil</b> <em>500</em> @ <em>100</em> : <em>50000</em>
+        <a href="#" class="pl-5 "><i class="edit-item fas fa-pencil-alt"></i></a>
+      </li>
+      <li class="list-group-item" id="item-0">
+        <strong class="pr-2">6/12/2020:</strong><b>Nabil</b> <em>500</em> @ <em>100</em> : <em>50000</em>
+        <a href="#" class="pl-5 "><i class="edit-item fas fa-pencil-alt"></i></a>
+      </li> -->
+    </ul>
+  </div> 
+  <script src="bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
